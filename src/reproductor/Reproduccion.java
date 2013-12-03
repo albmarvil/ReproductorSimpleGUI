@@ -108,13 +108,8 @@ public class Reproduccion extends Thread{
 			if(diff<100){//Cuando acabe el clip,pasa al siguiente. Haciendo esto evitamos que si pasamos manualmente en la mitad del clip no se creen hilos paralelos.
 				stopReproduccion();
 				reproductor.siguiente();
-//				this.reproductor.setEstado(5); PASAR A LA SIGUIENTE CANCIÓN
 			}
-//				else if(!this.sonido.getClip().isActive()){
-//				stopReproduccion();
-//				System.out.println("IEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
-//			}
-//		
+	
 		}		
 	}
 }
